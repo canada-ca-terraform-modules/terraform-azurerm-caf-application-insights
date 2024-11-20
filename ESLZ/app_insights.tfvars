@@ -14,11 +14,5 @@ app_insights = {
     # internet_ingestion_enabled            = false
     # internet_query_enabled                = false
     # force_customer_storage_for_profiler   = false
-
-    # Optional: Uncomment to set an api_key for the app insights
-    # api_key = {
-    #   read_permissions = ""
-    #   write_permissions = ""
-    # }
   }
 }

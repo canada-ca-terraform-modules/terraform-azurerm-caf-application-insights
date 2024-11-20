@@ -5,14 +5,14 @@ variable "app_insights" {
 }
 
 module "app_insights" {
-  source = "github.com/canada-ca-terraform-modules/terraform-caf-application_insights.git?ref=v1.0.0"
+  source = "github.com/canada-ca-terraform-modules/terraform-azurerm-caf-application-insights.git?ref=v1.0.1"
   for_each = var.app_insights
 
   userDefinedString = each.key
   env = var.env
   group = var.group
   project = var.project
-  resource_groups = local.resource_group_all
+  resource_groups = local.resource_groups_all
   app_insights = each.value
   tags = var.tags
 }

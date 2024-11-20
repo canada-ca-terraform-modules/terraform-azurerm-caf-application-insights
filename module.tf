@@ -17,12 +17,3 @@ resource "azurerm_application_insights" "insights" {
 
   tags = merge(var.tags, try(var.app_insights.tags, {}))
 }
-
-resource "azurerm_application_insights_api_key" "api_key" {
-  count = try(var.app_insights.api_key, null) != null ? 1 : 0
-  name = "${local.app_insights-name}-key"
-  application_insights_id = azurerm_application_insights.insights.id
-
-  read_permissions = try(var.app_insights.api_key.read_permissions, null)
-  write_permissions = try(var.app_insights.api_key.write_permissions, null)
-}
