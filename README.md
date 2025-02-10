@@ -18,8 +18,6 @@ No modules.
 | Name | Type |
 |------|------|
 | [azurerm_application_insights.insights](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/application_insights) | resource |
-| [azurerm_key_vault_secret.api-key-secret](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/key_vault_secret) | resource |
-| [azurerm_key_vault.key_vault](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/data-sources/key_vault) | data source |
 
 ## Inputs
 
@@ -39,7 +37,6 @@ No modules.
 
 | Name | Description |
 |------|-------------|
-| <a name="output_application_insights_api_key"></a> [application\_insights\_api\_key](#output\_application\_insights\_api\_key) | Outputs the application insights API Key secret (sensitive) |
 | <a name="output_application_insights_connection_string"></a> [application\_insights\_connection\_string](#output\_application\_insights\_connection\_string) | Outputs the application insights connection string |
 | <a name="output_application_insights_id"></a> [application\_insights\_id](#output\_application\_insights\_id) | Outputs the application insights ID |
 | <a name="output_application_insights_instrumentation_key"></a> [application\_insights\_instrumentation\_key](#output\_application\_insights\_instrumentation\_key) | Outputs the application insights instrumentation key |
