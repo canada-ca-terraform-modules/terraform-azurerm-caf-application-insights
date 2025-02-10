@@ -23,8 +23,3 @@ output "application_insights_connection_string" {
   value = azurerm_application_insights.insights.connection_string
 }
 
-output "application_insights_api_key" {
-  description = "Outputs the application insights API Key secret (sensitive)"
-  value = try(azurerm_application_insights_api_key.api_key[0].api_key, null)
-}
-

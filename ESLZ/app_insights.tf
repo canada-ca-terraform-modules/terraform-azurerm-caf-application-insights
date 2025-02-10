@@ -5,7 +5,7 @@ variable "app_insights" {
 }
 
 module "app_insights" {
-  source = "github.com/canada-ca-terraform-modules/terraform-azurerm-caf-application-insights.git?ref=v1.0.1"
+  source = "github.com/canada-ca-terraform-modules/terraform-azurerm-caf-application-insights.git?ref=v1.0.2"
   for_each = var.app_insights
 
   userDefinedString = each.key
